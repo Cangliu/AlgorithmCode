@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>org.example</groupId>
+    <artifactId>leecodePractice</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <spring-boot.version>2.3.7.RELEASE</spring-boot.version>
+        <spring-cloud-alibaba.version>2.2.2.RELEASE</spring-cloud-alibaba.version>
+        <spring-cloud.version>Hoxton.SR9</spring-cloud.version>
+        <druid.version>1.1.21</druid.version>
+        <logback.version>1.2.fisrtDay</logback.version>
+        <slf4j.version>1.7.5</slf4j.version>
+        <mybatis-plus.version>3.4.1</mybatis-plus.version>
+        <dubbo.version>3.0.2</dubbo.version>
+        <dubbo-spring-boot-starter.version>3.0.2</dubbo-spring-boot-starter.version>
+        <dubbo-registry-nacos.version>3.0.2</dubbo-registry-nacos.version>
+        <netty-all.version>4.1.32.Final</netty-all.version>
+        <seata.version>1.4.2</seata.version>
+        <swagger.version>2.9.2</swagger.version>
+        <jjwt.version>0.9.1</jjwt.version>
+        <redis.version>3.7.0</redis.version>
+        <spring.redis.version>2.3.9.RELEASE</spring.redis.version>
+
+    </properties>
+
+    <dependencies>
+
+        <!-- 日志log -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-dependencies</artifactId>
+            <version>${spring-boot.version}</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.6</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
